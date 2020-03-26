@@ -1,0 +1,129 @@
+%% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'mtree_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{817.32bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.8076549)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{mtree_svg-tex.pdf}}%
+    \put(0.29410145,0.76406732){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{1}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{mtree_svg-tex.pdf}}%
+    \put(0.03716415,0.65395133){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Su}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{mtree_svg-tex.pdf}}%
+    \put(0.18398546,0.65395133){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Dx}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{mtree_svg-tex.pdf}}%
+    \put(0.40421744,0.65395133){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Giù}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{mtree_svg-tex.pdf}}%
+    \put(0.55103876,0.65395133){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Sx}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{mtree_svg-tex.pdf}}%
+    \put(0.23996109,0.57136434){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Su}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{mtree_svg-tex.pdf}}%
+    \put(0.33355968,0.57136434){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Dx}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{mtree_svg-tex.pdf}}%
+    \put(0.4748752,0.57136434){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Giù}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{mtree_svg-tex.pdf}}%
+    \put(0.56847379,0.57136434){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Sx}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{mtree_svg-tex.pdf}}%
+    \put(0.11975114,0.47317758){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Su}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{mtree_svg-tex.pdf}}%
+    \put(0.1931618,0.47317758){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Dx}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{mtree_svg-tex.pdf}}%
+    \put(0.30327779,0.47317758){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Giù}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{mtree_svg-tex.pdf}}%
+    \put(0.37668845,0.47317758){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Sx}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{mtree_svg-tex.pdf}}%
+    \put(0.43174644,0.47317758){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Su}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{mtree_svg-tex.pdf}}%
+    \put(0.5051571,0.47317758){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Dx}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{mtree_svg-tex.pdf}}%
+    \put(0.61527309,0.47317758){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Giù}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{mtree_svg-tex.pdf}}%
+    \put(0.68868375,0.47317758){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Sx}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{mtree_svg-tex.pdf}}%
+    \put(0.11149244,0.38141426){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Su}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{mtree_svg-tex.pdf}}%
+    \put(0.1849031,0.38141426){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Dx}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{mtree_svg-tex.pdf}}%
+    \put(0.29501909,0.38141426){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Giù}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{mtree_svg-tex.pdf}}%
+    \put(0.36842975,0.38141426){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Sx}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{mtree_svg-tex.pdf}}%
+    \put(0.1849031,0.31809756){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{2}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{mtree_svg-tex.pdf}}%
+    \put(0.43174644,0.20339341){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Su}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{mtree_svg-tex.pdf}}%
+    \put(0.5051571,0.20339341){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Dx}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{mtree_svg-tex.pdf}}%
+    \put(0.61527309,0.20339341){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Giù}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{mtree_svg-tex.pdf}}%
+    \put(0.68868375,0.20339341){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Sx}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{mtree_svg-tex.pdf}}%
+    \put(0.51433343,0.31809756){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{2}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{mtree_svg-tex.pdf}}%
+    \put(0.44000514,0.38141426){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Su}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{mtree_svg-tex.pdf}}%
+    \put(0.5134158,0.38141426){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Dx}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{mtree_svg-tex.pdf}}%
+    \put(0.62353179,0.38141426){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Giù}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{mtree_svg-tex.pdf}}%
+    \put(0.69694245,0.38141426){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Sx}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{mtree_svg-tex.pdf}}%
+    \put(0.11975114,0.20431104){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Su}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{mtree_svg-tex.pdf}}%
+    \put(0.1931618,0.20431104){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Dx}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{mtree_svg-tex.pdf}}%
+    \put(0.30327779,0.20431104){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Giù}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{mtree_svg-tex.pdf}}%
+    \put(0.37668845,0.20431104){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Sx}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{mtree_svg-tex.pdf}}%
+    \put(0.50102775,0.00289054){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Viewer does not support full SVG 1.1\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

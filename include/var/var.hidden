@@ -1,0 +1,10 @@
+#include "../my_defines.h"
+/*-----   VARIABILI GLOBALI   ----- */
+extern pint pgrid; // Puntatore alla tabella
+extern pint pcoppie; // Puntatore all'array delle coppie
+extern pint pcontrolx, pcontroly; // Puntatore alle due strutture ausiliarie
+extern int  altezza_flow,riga_flow;
+extern int  cursorecoppia;
+extern int  numeropercorsi;
+extern int  numerocoppiexdue;
+/*--------------------------------- */

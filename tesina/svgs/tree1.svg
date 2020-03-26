@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	version="1.0"
+	width="424" height="424" viewBox="-2 -22 424 404">
+	<title>Number Link Puzzle</title>
+	<polygon id="WhiteBackground"
+		points="0,0 420,0 420,420 0,420"
+		style="fill:#ffffff;stroke:none" />
+
+	<g id="Connectors" style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel">
+		<polyline points="212,50 212,60" />
+        <polyline points="212,60 62,90 62,100" />
+            <polyline points="62,125 62,135" />
+            <polyline points="62,135 24,145 24,150" />
+            <polyline points="62,135 62,145 62,150" />
+            <polyline points="62,135 100,145 100,150" />
+        <polyline points="62,175 62,180" />
+        <polyline points="62,185 62,190" />
+        <polyline points="362,175 362,180" />
+        <polyline points="362,185 362,190" />
+
+        <polyline points="212,60 162,120 162,130" />
+        <polyline points="162,160 154,185, 154,210" />
+        <polyline points="154,195 116,205, 116,210"/>
+        <polyline points="270,195 232,205, 232,210"/>
+        <polyline points="270,195 308,205, 308,210"/>
+        <polyline points="154,195 192,205, 192,210"/>
+        <polyline points="212,60 262,120 262,130" />
+        <polyline points="262,160 270,185 270,210" />
+        
+        <polyline points="270,240 270,245" />
+        <polyline points="270,250 270,255" />
+        <polyline points="155,245 155,250" />
+        <polyline points="155,235 155,240" />
+        <polyline points="212,60 362,90" />
+            <polyline points="362,90 362,100" />
+            <polyline points="362,125 362,150" />
+            <polyline points="362,135 400,145" />
+                <polyline points="400,145 400,150" />
+            <polyline points="362,135 324,145" />
+                <polyline points="324,145 324,150" />
+	</g>
+	<g id="Numbers" style="font-size:16px;text-align:center;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial,sans,sans-serif">
+		<text x="212" y="35.1">Punto di partenza</text>
+        <text x="62" y="120">Su</text>
+        <text x="362" y="120">Dx</text>
+        <text x="162" y="150">Sx</text>
+        <text x="262" y="150">Giù</text>
+	</g>
+	<g id="Numberss" style="font-size:10px;text-align:center;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial,sans,sans-serif">
+		<text x="24" y="165">Su</text>
+        <text x="62" y="165">Sx</text>
+        <text x="100" y="165">Dx</text>
+        <text x="324" y="165">Su</text>
+        <text x="362" y="165">Giù</text>
+        <text x="400" y="165">Dx</text>
+        <text x="270" y="225">Sx</text>
+        <text x="232" y="225">Giù</text>
+        <text x="308" y="225">Dx</text>
+        <text x="154" y="225">Su</text>
+        <text x="192" y="225">Sx</text>
+        <text x="116" y="225">Giù</text>
+	</g>
+</svg>
