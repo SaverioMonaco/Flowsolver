@@ -15,6 +15,7 @@
 \usepackage{svg}
 \usepackage{pgf}
 \usepackage{array}
+\usepackage{cancel}
 
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
@@ -40,9 +41,10 @@
 	\maketitle
 	\selectlanguage{english}
 	\begin{abstract}
-		La funzione di questo programma è di risolvere i puzzle di tipologia simile a quella dell'applicazione \textit{Flow}, trovando tutte le soluzioni possibili. L'algoritmo è ispirato alla tecnica di Backtracking e, data la complessità computazionale del problema, si è cercato di lavorare principalmente sulla velocità di esecuzione al costo della memoria.\\ Sono state inoltre implementate delle funzioni dedicate alla risoluzione degli esatti livelli dell'applicazione ufficiale ed il gioco da terminale.
+		La funzione di questo programma è di risolvere i puzzle di tipologia simile a quella dell'applicazione \textit{Flow}, trovando tutte le soluzioni possibili. L'algoritmo è ispirato alla tecnica di Backtracking e, data la complessità computazionale del problema, si è cercato di lavorare principalmente sulla velocità di esecuzione a discapito della memoria.\\ Sono state inoltre implementate delle funzioni dedicate alla risoluzione degli esatti livelli dell'applicazione ufficiale e il gioco da terminale.
 	\end{abstract}
 	\selectlanguage{italian}
+	\vspace{-.5cm}
 	\section{Il puzzle}
 	Flow è un puzzle logico nel quale il giocatore deve riuscire a connettere tutte le coppie in una griglia tramite percorsi, muovendosi nelle 4 direzioni e con la difficoltà che questi percorsi non possono intersecarsi.\\
 	Nell'applicazione originale le coppie vengono distinte tramite colori, in questo articolo invece, per evitare un utilizzo eccessivo di colori e per rappresentare effettivamente come sono state salvate le informazioni in memoria, vengono usati dei numeri, in particolare la prima coppia è composta dai punti 1 e 2, la seconda dai numeri 3 e 4, e così via.\\
@@ -57,7 +59,7 @@
 	
 	\section{L'algoritmo risolutivo}
 		\subsection*{L'algoritmo}
-		Trovare la soluzione di un determinato puzzle di Flow è di complessità non polinomiale\footnote{\href{https://en.wikipedia.org/wiki/Numberlink\#Computational_complexity}{Numberlink - Wikipedia}}, per avere un idea di ciò, si è riportato il calcolo del numero dei percorsi, di una coppia in una griglia quadrata di lato L, con i punti della coppia posti agli estremi della prima diagonale:\\
+		Trovare la soluzione di un determinato puzzle di Flow è di complessità non polinomiale\footnote{\href{https://en.wikipedia.org/wiki/Numberlink\#Computational_complexity}{Numberlink - Wikipedia}}, per avere un'idea di ciò, si è riportato il calcolo del numero dei percorsi, di una coppia in una griglia quadrata di lato L, con i punti della coppia posti agli estremi della prima diagonale:\\
 		\vspace*{-0.2cm}
 		\begin{center}
 		\begin{tabular}{|c|l|}
@@ -85,19 +87,21 @@
 	\end{figure}
     \vspace*{-1.6cm}
 %\`{E} possibile ridurre il problema nella ricerca di una funzione capace di trovare tutti i percorsi possibili dato un punto di partenza ed un punto d'arrivo su una griglia in presenza di ostacoli (celle già occupate). Si dovrà infine riuscire a combinare questo algoritmo con tutte le coppie per trovare tutte le soluzioni complessive.
-    Il problema della ricerca di tutte le soluzioni di un puzzle di Flow può essere scomposto nella ricerca di tutti i percorsi dato un punto di partenza, uno di arrivo e di celle già occupate: si cercano i percorsi per la prima coppia, e per ogni percorso trovato, si cerceranno le soluzioni della seconda e così via.\medskip\\
-    Per trovare tutti i percorsi dato un punto di partenza ed uno di arrivo è possibile considerare una struttura ad albero con ogni nodo rappresentante uno dei 4 movimenti.
+	Per la ricerca dell'algoritmo migliore si è ricorso all'approccio \textit{Divide et Impera}: si è scomposto il problema della ricerca delle soluzioni complessive nel problema della ricerca di tutti i percorsi delle singole coppie. Si troveranno quindi tutti i percorsi della prima coppia, e per ciascun percorso trovato si passa alla ricerca di quelli della seconda e così via.\\
+%    Il problema della ricerca di tutte le soluzioni di un puzzle di Flow può essere scomposto nella ricerca di tutti i percorsi dato un punto di partenza, uno di arrivo e di celle già occupate: si cercano i percorsi per la prima coppia, e per ogni percorso trovato, si cerceranno le soluzioni della seconda e così via.\medskip\\
+    Per trovare tutti i percorsi dato un punto di partenza e uno di arrivo è possibile considerare una struttura ad albero con ogni nodo rappresentante uno dei 4 movimenti possibili.
 	\begin{figure}[h]
 		\centering
-		\footnotesize{\mysvg{tree1}{9}}
+		\footnotesize{\mysvg{tree1}{8}}
 	\end{figure}
 	\vspace{-3cm}\\
-   Dal nodo iniziale (il punto di partenza) ci si potrà spostare nelle 4 direzioni, dopo di che il \textit{branching ratio} (il numero di nodi figlio per nodo madre) sarà di 3, perché tornare indietro non è uno spostamento possibile.\\
-   Ovviamente non sempre tutte le 3 direzioni saranno disponibili, quindi il numero di nodi figli potrà essere minore di tre fino a diventare 0 una volta che nessuna cella adiacente sarà libera.\\
+   Dal nodo iniziale (il punto di partenza) ci si potrà spostare nelle 4 direzioni, dopo di che il \textit{branching ratio} (il numero di nodi figlio per nodo madre) sarà al più di 3, perché tornare indietro non è uno spostamento possibile.\\
+   Ovviamente non sempre tutte le 3 direzioni saranno disponibili, quindi il numero di nodi figlio potrà essere minore di tre fino a diventare 0 una volta che nessuna cella adiacente sarà libera.\\
+   Muovendosi sui nodi dell'albero è possibile trovare tutti i percorsi possibili, il metodo scelto per esplorare l'intero albero in maniera ordinata è quello del \textit{Backtracking}, quindi seguendo le seguenti regole:
    Per trovare tutti i percorsi bisogna "muoversi" sui nodi dell'albero tenendo conto di tutti quelli visti in precedenza, il metodo scelto per fare ciò è quello del \textit{Backtracking}, ovvero seguendo le seguenti regole:
    \begin{itemize}
-   	\item Ogni volta possibile, si scende di un livello spostandosi nel nodo figlio più a sinistra disponibile;
-   	\item Se non è più possibile scendere di livello, si sale di uno e si prosegue nel nodo adiacente a destra.
+   	\item ogni volta possibile, si scende di un livello spostandosi nel nodo figlio più a sinistra disponibile;
+   	\item se non è più possibile scendere di livello, si sale di uno e si prosegue nel nodo adiacente a destra.
    \end{itemize}
 	
 	Nell'\textit{Appendice A} viene mostrato come dovrebbe funzionare passo per passo l'algoritmo appena introdotto per un caso semplice di una griglia 3x3.\medskip\\
@@ -109,16 +113,16 @@
 %	Dove b è la base, h l'altezza, o il numero di celle già occupate da altre coppie.\medskip\\
 %	Questo valore orrisponde al numero di volte massime che la funzione chiamerà se stessa per singola coppia.\\
 	Poiché ciascun nodo dell'albero può avere fino a 3 nodi figlio bisognerà trovare un modo per trovare e scartare quelli che non porteranno a nessuna soluzione, questi metodi si chiamano \textit{metodi di potatura dell'albero} e se vengono applicati a nodi poco profondi permettono di risparmiare un gran numero di chiamate a funzione.\medskip\\
-	Per questo articolo è stato applicato solo un metodo di potatura dell'albero e consiste nel verificare se delle celle occupate non abbiano diviso la griglia in maniera tale da rendere impossibile il collegamento tra due coppie.\medskip\\
+	Per questo articolo è stato applicato solo un metodo di potatura dell'albero il quale verifica che durante la ricerca dei percorsi tutte le righe e colonne abbiano abbastanza celle libere da poter permettere il collegamento di tutte le coppie divise.\medskip\\
 	Per chiarire il funzionamento di questo metodo si è portato un esempio:\\
 	\vspace*{-.5cm}
 	\begin{figure}[h]
 		\centering
 		\text{}\hspace*{0.5cm}{\large\mysvg{giacomo}{4}}
 	\end{figure}\\
-	Lo spostamento indicato in figura non porterà ovviamente a nessuna soluzione complessiva, poiché le coppie 3-4 e 5-6 dovranno entrambe passare da una singola cella. Evitare di compiere quella azione, farebbe risparmiare esattamente 155 mosse, e questo è solo uno dei tanti casi che si possono applicare in questa stessa configurazione. In totale se si usa l'algoritmo per risolvere questo puzzle si dovranno fare 3311 mosse, mentre applicando questo metodo, se ne faranno solo 1037.\vspace{3cm}\\
-	In sostanza si deve verificare che ogni riga e colonna non abbia meno celle libere che coppie divise dalle prime.\medskip\\
-	Per applicare questo metodo bisogna inizializzare due array di interi, uno che controlla tutte le righe, e uno che controlla tutte le colonne, nella seguente maniera:
+	Lo spostamento indicato in figura non porterà ovviamente a nessuna soluzione complessiva, poiché le coppie 3-4 e 5-6 dovranno entrambe passare da una singola cella. Evitare di compiere quella azione, farebbe risparmiare esattamente 155 mosse, e questo è solo uno dei tanti tagli che si possono applicare in questa stessa configurazione. In totale se si usa l'algoritmo per risolvere questo puzzle si dovranno fare 3311 mosse, mentre applicando questo metodo, se ne faranno solo 1037.\bigskip\\
+	In sostanza si deve verificare che ogni riga e colonna abbia più celle libere che numero di coppie che esse hanno diviso.\\
+	Per fare ciò bisogna utilizzare due array di interi, uno che controlla tutte le righe, e uno che controlla tutte le colonne, nella seguente maniera:
 	\begin{enumerate}
 		\item Si inizializzano i due array di interi:\\
 		\begin{figure}[h]
@@ -141,7 +145,7 @@
 			\mysvg{expc/pcontrol3}{6}
 		\end{figure}\\
 		Il valore delle celle rappresenta il numero di celle che possono essere occupate in tale riga o colonna, senza che si incorra nel caso senza soluzione precedentemente descritto.\medskip\\
-		\item Infine ogni volta che si cercano i percorsi per una nuova coppia, bisogna aggiungere '1' ad ogni cella relativa alla riga o colonna che ha diviso tale coppia.
+		\item Infine ogni volta che si cercano i percorsi per una nuova coppia, bisogna aggiungere '1' ad ogni cella dei due array relativi alla riga o colonna che ha diviso tale coppia perché durante le verifiche non si deve considerare la coppia corrente.
 	\end{enumerate}
 	Ad ogni spostamento bisogna aggiornare e verificare le celle relative alla posizione interessata, se uno dei valori diventa inferiore a '0', la mossa  non è valida: ci sarebbero meno celle libere, che coppie divise, che non potranno collegarsi.
 		
@@ -157,53 +161,58 @@
 %	Avendo già premesso che il cuore dell'algoritmo consiste in una funzione ricorsiva, si è cercato di far passare meno variabili possibili di input. Per questo motivo tutte le strutture sono inizializzate come variabili esterne, quindi in particolare accessibile alla funzione ricorsiva senza bisogno di chiamarla.\medskip\\
 	Le strutture adoperate sono:
 	\begin{itemize}
-		\item \texttt{int$^*$ \textbf{pgrid}} (array della griglia):\\ per rendere il codice più veloce è stato ritenuto migliore utilizzare un array ad interi monodimensionale per rappresentare tutta la griglia.\\
+		\item \texttt{int$^*$ \textbf{pgrid}}\\per rendere il codice più veloce è stato ritenuto migliore utilizzare un array di interi monodimensionale per rappresentare tutta la griglia.\\
 		Le celle libere vengono salvate con l'intero '0', i due punti della prima coppia rispettivamente con gli interi '1' e '2', quelli della seconda coppia con gli interi '3' e '4' e così via.\\
-		Una griglia costruita in tal modo però avrebbe l'ultima cella di una riga, adiacente alla prima della successiva, quindi durante l'esecuzione dell'algoritmo si potrebbe incorrere a mosse errate in prossimità dei bordi, per ovviare a questo problema senza dover fare eccessivi controlli sulla posizione si è pensato di inizializzare l'array con un contorno, ovvero celle occupate, nella seguente maniera:
+		Una griglia costruita in tal modo però avrebbe l'ultima cella di una riga adiacente alla prima della successiva, quindi durante l'esecuzione dell'algoritmo si potrebbe incorrere a mosse errate in prossimità dei bordi, per ovviare a questo problema senza dover fare eccessivi controlli sulla posizione si è pensato di inizializzare l'array con un contorno di celle occupate, nella seguente maniera:
 		\begin{figure}[h]
 			\centering
 			\qquad\qquad\quad\text{ }
-			\mysvg{pgrid1}{45}
+			\mysvg{pgrid1}{35}
 		\end{figure}
 	\vspace*{-1.7cm}
 			\begin{figure}[h]
 		\centering
 		\qquad\text{ }
-		\mysvg{Downarrow}{04}
+		\mysvg{Downarrow}{03}
 	\end{figure}
-	\vspace*{-0.7cm}
+	\vspace*{-0.9cm}
 		\begin{figure}[h]
 	\centering
 	\text{ }\hspace*{0.6cm}
-	\mysvg{pgrid2}{8}
+	\mysvg{pgrid2}{6}
 \end{figure}\\
+
+	\(\bcancel{\fbox{\color{white}a}}\) rappresenta una cella di contorno,\\ {\fbox{\color{white}a}} rappresenta una cella libera della griglia.\medskip\\
 	Inoltre per segnalare il contorno bisogna usare un valore intero non corrispondente a nessuno utilizzato per le coppie, perciò si è scelto '-1'.\\
 	
-	\item \texttt{int$^*$ \textbf{pcoppie}} (array delle coppie):\\ contiene le informazioni su i punti delle coppie, il primo intero indica il numero totale delle coppie, i restanti indicano la posizione dei punti delle coppie sulla griglia. L'array delle coppie serve sia a facilitare alcune funzioni secondarie (come la stampa), ma sopratutto per dire alla macchina da dove partire per trovare i vari percorsi durante la funzione ricorsiva.\\
+	\item \texttt{int$^*$ \textbf{pcoppie}}\\ contiene le informazioni su i punti delle coppie, il primo intero indica il numero totale delle coppie, i restanti indicano la posizione dei punti delle coppie sulla griglia. L'array delle coppie serve sia a facilitare alcune funzioni secondarie (come la stampa), ma sopratutto per dire alla macchina da dove partire per trovare i vari percorsi durante la funzione ricorsiva.\\
 	
-	\item \texttt{int$^*$ \textbf{pcontrolx}$,$\space\textbf{pcontroly}}\\(array delle strutture ausiliarie):\\
-	Sono gli array di interi con lo scopo di "potatura" dell'albero già introdotti. In base alle informazioni dentro questi array, è possibile predire se una mossa porterà ad una soluzione complessiva o meno.\\
+	\item \texttt{int$^*$ \textbf{pcontrolx}$,$\space\textbf{pcontroly}}\\
+	Sono gli array di interi con lo scopo di "potatura" dell'albero già introdotti. In base alle informazioni dentro questi array, è possibile predire se una mossa potrà portare o meno ad una soluzione complessiva.\\
 	\end{itemize}
 \subsection*{Le funzioni principali}	
 	Con griglia e strutture già inizializzate, la parte principale dell'algoritmo risolutivo è composto da 3 funzioni principali:
 	\begin{itemize}
 		\item \code{flow\_risolutore()}:\\
-		Lo scopo di questa funzione è inizializzare le strutture di controllo, impostare le variabili \texttt{numeropercosi} a '0' e \texttt{cursorecoppia} a '-1', in particolare quest'ultima funge da indice per l'array delle coppie \code{pcoppie} ogni volta bisogna cambiare coppia all'interno della ricorsione, infine chiama la funzione \texttt{flow\_inizializzaprossimacoppia()}\medskip\\
+		Lo scopo di questa funzione è inizializzare le strutture di controllo, impostare le variabili \texttt{numerosoluzioni} a '0' e \texttt{cursorecoppia} a '-1', in particolare quest'ultima funge da indice per l'array delle coppie \code{pcoppie} ogni volta bisogna cambiare coppia all'interno della ricorsione. Infine chiama la funzione \texttt{flow\_inizializzaprossimacoppia()}\medskip\\
 		\item \code{flow\_inizializzaprossimacoppia()}
-		All'inizio, e ogni volta che una coppia trova un percorso, viene lanciata questa funzione che aggiorna l'indice cursorecoppia passando alla coppia successiva. Viene fatto un controllo se abbiamo finito le coppie (quando cursorecoppia ha un valore maggiore al numero effettivo delle coppie):\newpage
+		Quando viene chiamata da \texttt{flow\_risolutore()} ed ogni volta che una coppia trova un percorso, viene lanciata questa funzione che aggiorna l'indice cursorecoppia passando alla coppia successiva. Prima di tutto viene fatto un controllo se abbiamo finito le coppie:\newpage
 		\begin{algoritmo}
 {\small		cursorecoppia+=2;\medskip\\
+			/* Ci si chiede se non esistono altre coppie, in\\\text{  \space} caso si è trovata una soluzione complessiva */\\
 			if(cursorecoppia $>$ (*(pcoppie)*2))\\
 			\text{ }\{\\
 			\text{ }\quad/* Si è trovata una soluzione */\\
-			\text{ }\quad percorsi++;\\
+			\text{ }\quad numerosoluzioni++;\medskip\\
+			\text{ }\quad /* Si stampa la soluzione */\\
+			\text{ }\quad flow\_grafica\_stampasoluzione();\medskip\\
 			\text{ }\quad
 			 /* Si torna alla coppia precedente */\\
 			\text{ }\quad cursorecoppia-=2;\medskip\\
 			\text{ }\quad return;}\\
 			\text{ }\}
 		\end{algoritmo}
-	Nel caso in cui la coppia invece esiste, bisogna aggiornare le strutture di controllo come detto in precedenza e poi bisogna far partire la ricerca dei percorsi
+	Nel caso in cui la coppia invece esiste, bisogna aggiornare le strutture di controllo come detto in precedenza e poi bisogna far partire la ricerca dei percorsi:
 	\begin{algoritmo}
 		{\small
 		/* Si aggiornano le strutture al cambio di coppia */\\
@@ -215,14 +224,15 @@
 			flow\_trovapercorsi(*(pcoppie+cursorecoppia)+riga);\\
 			flow\_trovapercorsi(*(pcoppie+cursorecoppia)+1);}
 	\end{algoritmo}
-	Arrivato a questo punto del codice si sono trovati tutti i percorsi per quella coppia dati i percorsi delle coppie precedenti, bisogna quindi ri-aggiornare le strutture di controllo e modificare \texttt{cursorecoppia}.
+	Poiché la funzione ricorsiva è sempre la stessa, viene ogni volta controllata anche la cella di provenienza; questo problema sarebbe potuto essere aggirato tramite la creazione di 4 funzioni ricorsive diverse anziché una, ma per mantenere semplice la stesura del codice si è scelta questa versione ad una funzione ricorsiva.\\
+	Arrivato a questo punto del codice si sono esaminati tutti i percorsi per quella coppia dati i percorsi delle coppie precedenti, bisogna quindi ri-aggiornare le strutture di controllo e modificare \texttt{cursorecoppia}:\newpage
 	
 	\begin{algoritmo}
 		{\small flow\_struttureausiliarie\_precedente();\medskip\\
 		cursorecoppia-=2;}
 	\end{algoritmo}
 		\item \mbox{\code{flow\_trovapercorsi(int cursore)}}
-		La funzione ricorsiva controlla il contenuto della cella non quando chiama, ma una volta chiamata, quindi all'inizio della funzione bisogna controllare se la cella interessata è una cella libera, occupata o quella che si sta cercando:
+		Il contenuto della cella sovrastante viene verificato solo dopo aver chiamato la funzione ricorsiva in tale cella, quindi all'inizio della funzione bisogna controllare se la cella interessata è una cella libera, occupata o quella che si sta cercando:
 	\begin{algoritmo}
 		{\small 
 		/* Se la cella è libera... */\\
@@ -258,14 +268,14 @@
 	\end{itemize}
 	\section{Il gioco da terminale}
 	Tramite la funzione\\ \code{flow\_game\_start(int base, int altezza, int numerocoppie)} è possibile giocare al gioco di flow, risolvendo un puzzle in una griglia 'base'$\times$'altezza' e con 'numerocoppie' coppie.\\
-	Per creare un puzzle con soluzione si inseriscono in un \texttt{do while} la funzione per inizializzare la griglia e la funzione per inizializzare le coppie in maniera casuale e come condizione si utilizza una funzione che risolve il puzzle e che ritorna '1' non appena trova una soluzione, '0' altrimenti:\newpage
+	Per creare un puzzle con soluzione si generano delle coppie con posizione casuale e si verifica se esiste soluzione, in caso contrario vengono ri-generate le posizioni delle coppie fino a quando non viene trovato un puzzle con almeno una soluzione. Ciò in codice si scrive:
 	\begin{algoritmo}
 		{\small\texttt{do\\\text{\space} \{\\\text{ }\quad\space inizializzagriglia(base,altezza);\\\text{ }\quad\space generacoppie\_rand(numerocoppie);\\\text{\space} \} while(!trovaprimopercorso())}}
 	\end{algoritmo}
 	\medskip\\
 	Tramite una funzione simile a quella della ricerca dei percorsi, è possibile verificare se la soluzione immessa dall'utente è valida.
 	\section{Conclusioni}
-	Il programma creato riesce a risolvere tutti i livelli dell'app originale fin'ora provati in tempi relativamente brevi (il tempo più lungo registato è stato 650 secondi), inoltre l'introduzione delle strutture di controllo porta nella maggior parte dei casi, una notevole diminuizione dei tempi di compilazione. Per avere una idea di ciò, si è cronometrato il tempo di risoluzione di alcuni puzzle con e senza le strutture ausiliarie:\bigskip\\
+	Il programma creato riesce a risolvere tutti i livelli dell'app originale fin'ora provati in tempi relativamente brevi (il tempo più lungo registrato è stato 650 secondi), inoltre l'introduzione delle strutture di controllo porta nella maggior parte dei casi, una notevole diminuizione dei tempi di esecuzione. Per avere una idea di ciò, si è cronometrato il tempo di risoluzione di alcuni puzzle con e senza il metodo di potatura:\bigskip\\
 	\hspace*{-.6cm}
 	\begin{tabular}{|c|c|C{2.4cm}|C{2.4cm}|}
 		\hline 
@@ -282,7 +292,7 @@
 	\end{tabular}\bigskip\\
 	\`{E} chiaro quindi che l'introduzione di questo particolare metodo di potatura dell'albero delle mosse è stato un fattore determinante nella bontà complessiva del programma.\\
 	Sarebbe possibile migliorare ulteriormente l'algoritmo nella risoluzione dei livelli dell'app sapendo che la soluzione finale prevede che tutte le celle siano occupate, quindi creando strutture ausiliarie apposite in modo da eliminare preventivamente tutte quelle mosse che portano a risultati invalidi.\\
-	Per gli altri casi, se non si volessero trovare tutte le soluzioni esistenti allora si potrebbero introdurre algoritmi euristici che potrebbero trovare un percorso in maniera più veloce.
+	Per gli altri casi, se non si volessero trovare tutte le soluzioni esistenti, allora si potrebbero introdurre algoritmi euristici che potrebbero trovare un percorso in maniera più veloce.
 	\clearpage
 	
 	\begin{appendices}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.3.18)  26 MAR 2020 12:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.3.18)  1 APR 2020 14:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -955,36 +955,39 @@ Package: pgfcomp-version-0-65 2019/02/02 v3.1.1 (3.1.1)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
 Package: pgfcomp-version-1-18 2019/02/02 v3.1.1 (3.1.1)
-))
+)) (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
 \c@algoritmo=\count314
- (./document.aux)
+
+(./document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 
 -- Lines per column: 52 (approximate, difference = 6.784pt).
-LaTeX Info: Redefining \it@ocap on input line 39.
-LaTeX Info: Redefining \it@ccap on input line 39.
+LaTeX Info: Redefining \it@ocap on input line 40.
+LaTeX Info: Redefining \it@ccap on input line 40.
 
 File italian.ldf warning: 
 italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 39.
+italian.ldf    on input line 40.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
@@ -1064,7 +1067,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count321
-Package hyperref Info: Link coloring OFF on input line 39.
+Package hyperref Info: Link coloring OFF on input line 40.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1073,21 +1076,21 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count322
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
-LaTeX Info: Redefining \nameref on input line 39.
+LaTeX Info: Redefining \ref on input line 40.
+LaTeX Info: Redefining \pageref on input line 40.
+LaTeX Info: Redefining \nameref on input line 40.
 
 (./document.out) (./document.out)
 \@outlinefile=\write4
 \openout4 = `document.out'.
 
  ABD: EveryShipout initializing macros
-Underfull \hbox (badness 7869) in paragraph at lines 42--44
+Underfull \hbox (badness 7869) in paragraph at lines 43--45
 \OT1/ptm/b/n/10 Sono state in-oltre im-ple-men-tate delle fun-
  []
 
 Package svg Info: Last page of `./svg-inkscape/Numberlink_puzzle_svg-tex.pdf' i
-s 1 on input line 53.
+s 1 on input line 55.
 (./svg-inkscape/Numberlink_puzzle_svg-tex.pdf_tex
 <./svg-inkscape/Numberlink_puzzle_svg-tex.pdf, id=24, page=1, 319.1925pt x 319.
 1925pt>
@@ -1108,7 +1111,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 57.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 Package svg Info: Last page of `./svg-inkscape/Rightarrow_svg-tex.pdf' is 1 on 
-input line 54.
+input line 56.
 
 (./svg-inkscape/Rightarrow_svg-tex.pdf_tex
 <./svg-inkscape/Rightarrow_svg-tex.pdf, id=26, page=1, 327.04112pt x 1205.62921
@@ -1120,7 +1123,7 @@ input line 56.
 (pdftex.def)             Requested size: 13.29677pt x 49.008pt.
 )
 Package svg Info: Last page of `./svg-inkscape/Numberlink_puzzle_solution_svg-t
-ex.pdf' is 1 on input line 55.
+ex.pdf' is 1 on input line 57.
 
 (./svg-inkscape/Numberlink_puzzle_solution_svg-tex.pdf_tex
 <./svg-inkscape/Numberlink_puzzle_solution_svg-tex.pdf, id=28, page=1, 319.1925
@@ -1133,7 +1136,7 @@ Package pdftex.def Info: ./svg-inkscape/Numberlink_puzzle_solution_svg-tex.pdf
 (pdftex.def)             Requested size: 88.64746pt x 88.64758pt.
 )
 Package svg Info: Last page of `./svg-inkscape/npaths_svg-tex.pdf' is 1 on inpu
-t line 84.
+t line 86.
 
 (./svg-inkscape/npaths_svg-tex.pdf_tex
 <./svg-inkscape/npaths_svg-tex.pdf, id=32, page=1, 552.04602pt x 552.04602pt>
@@ -1144,14 +1147,14 @@ t line 56.
 (pdftex.def)             Requested size: 110.81102pt x 110.81157pt.
 )
 Package svg Info: Last page of `./svg-inkscape/tree1_svg-tex.pdf' is 1 on input
- line 92.
+ line 95.
  (./svg-inkscape/tree1_svg-tex.pdf_tex
 <./svg-inkscape/tree1_svg-tex.pdf, id=34, page=1, 316.18124pt x 316.18124pt>
 File: ./svg-inkscape/tree1_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/tree1_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/tree1_svg-tex.pdf , page1 used on input
  line 56.
-(pdftex.def)             Requested size: 199.4585pt x 199.46057pt.
+(pdftex.def)             Requested size: 177.29831pt x 177.30151pt.
 )
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1175,18 +1178,18 @@ pdfTeX warning: /usr/bin/pdflatex (file ./svg-inkscape/npaths_svg-tex.pdf): PDF
 pdfTeX warning: /usr/bin/pdflatex (file ./svg-inkscape/tree1_svg-tex.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 []\OT1/ptm/m/n/11 Nell'\OT1/ptm/m/it/11 Appendice A \OT1/ptm/m/n/11 vie-ne mo-s
 tra-to co-me
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
 Package svg Info: Last page of `./svg-inkscape/giacomo_svg-tex.pdf' is 2 on inp
-ut line 117.
+ut line 121.
 (./svg-inkscape/giacomo_svg-tex.pdf_tex
 <./svg-inkscape/giacomo_svg-tex.pdf, id=56, page=1, 319.1925pt x 256.19398pt>
 File: ./svg-inkscape/giacomo_svg-tex.pdf Graphic file (type pdf)
@@ -1202,7 +1205,7 @@ ut line 63.
 (pdftex.def)             Requested size: 88.64746pt x 71.15135pt.
 )
 Package svg Info: Last page of `./svg-inkscape/pcontrol1_svg-tex.pdf' is 2 on i
-nput line 127.
+nput line 131.
 
 (./svg-inkscape/pcontrol1_svg-tex.pdf_tex
 <./svg-inkscape/pcontrol1_svg-tex.pdf, id=59, page=1, 319.1925pt x 274.02374pt>
@@ -1221,7 +1224,7 @@ nput line 63.
 (pdftex.def)             Requested size: 132.97458pt x 114.15675pt.
 )
 Package svg Info: Last page of `./svg-inkscape/pcontrol2_svg-tex.pdf' is 2 on i
-nput line 135.
+nput line 139.
 
 (./svg-inkscape/pcontrol2_svg-tex.pdf_tex
 <./svg-inkscape/pcontrol2_svg-tex.pdf, id=62, page=1, 319.1925pt x 274.02374pt>
@@ -1240,7 +1243,7 @@ nput line 72.
 (pdftex.def)             Requested size: 132.97458pt x 114.15675pt.
 )
 Package svg Info: Last page of `./svg-inkscape/pcontrol3_svg-tex.pdf' is 2 on i
-nput line 141.
+nput line 145.
 
 (./svg-inkscape/pcontrol3_svg-tex.pdf_tex
 <./svg-inkscape/pcontrol3_svg-tex.pdf, id=65, page=1, 319.1925pt x 274.02374pt>
@@ -1258,7 +1261,7 @@ Package pdftex.def Info: ./svg-inkscape/pcontrol3_svg-tex.pdf , page2 used on i
 nput line 72.
 (pdftex.def)             Requested size: 132.97458pt x 114.15675pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 137--144
+Underfull \hbox (badness 10000) in paragraph at lines 141--148
 
  []
 
@@ -1291,15 +1294,15 @@ PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: /usr/bin/pdflatex (file ./svg-inkscape/pcontrol3_svg-tex.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
 >]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 160.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 164.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <11> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 160.
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 164.
 Package svg Info: Last page of `./svg-inkscape/pgrid1_svg-tex.pdf' is 1 on inpu
-t line 166.
+t line 170.
 
 (./svg-inkscape/pgrid1_svg-tex.pdf_tex
 <./svg-inkscape/pgrid1_svg-tex.pdf, id=85, page=1, 380.38823pt x 380.38823pt>
@@ -1307,10 +1310,10 @@ File: ./svg-inkscape/pgrid1_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/pgrid1_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/pgrid1_svg-tex.pdf , page1 used on inpu
 t line 56.
-(pdftex.def)             Requested size: 99.72925pt x 99.7286pt.
+(pdftex.def)             Requested size: 77.56906pt x 77.56798pt.
 )
 Package svg Info: Last page of `./svg-inkscape/Downarrow_svg-tex.pdf' is 1 on i
-nput line 172.
+nput line 176.
 
 (./svg-inkscape/Downarrow_svg-tex.pdf_tex
 <./svg-inkscape/Downarrow_svg-tex.pdf, id=87, page=1, 376.40625pt x 451.6875pt>
@@ -1319,10 +1322,10 @@ File: ./svg-inkscape/Downarrow_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Downarrow_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Downarrow_svg-tex.pdf , page1 used on i
 nput line 56.
-(pdftex.def)             Requested size: 8.86339pt x 10.63464pt.
+(pdftex.def)             Requested size: 6.64838pt x 7.97426pt.
 )
 Package svg Info: Last page of `./svg-inkscape/pgrid2_svg-tex.pdf' is 1 on inpu
-t line 178.
+t line 182.
 
 (./svg-inkscape/pgrid2_svg-tex.pdf_tex
 <./svg-inkscape/pgrid2_svg-tex.pdf, id=89, page=1, 275.25336pt x 23.19664pt>
@@ -1330,112 +1333,117 @@ File: ./svg-inkscape/pgrid2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/pgrid2_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/pgrid2_svg-tex.pdf , page1 used on inpu
 t line 56.
-(pdftex.def)             Requested size: 177.29831pt x 14.9417pt.
+(pdftex.def)             Requested size: 132.97458pt x 11.2061pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 160--181
+Underfull \hbox (badness 10000) in paragraph at lines 164--184
 \OT1/ptm/m/n/11 Le cel-le li-be-re ven-go-no sal-va-te con
  []
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 160--181
+Underfull \hbox (badness 2158) in paragraph at lines 164--184
 \OT1/ptm/m/n/11 Una gri-glia co-strui-ta in tal mo-do per[]o
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--181
+Underfull \hbox (badness 10000) in paragraph at lines 164--184
 \OT1/ptm/m/n/11 l'e-se-cu-zio-ne del-l'al-go-rit-mo si po-treb-be
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--181
+Underfull \hbox (badness 10000) in paragraph at lines 164--184
 
  []
 
 
-Underfull \hbox (badness 4467) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
+
+ []
+
+
+Underfull \hbox (badness 4467) in paragraph at lines 188--189
 \OT1/ptm/m/n/11 to-ta-le del-le cop-pie, i re-stan-ti in-di-ca-no
  []
 
 
-Underfull \hbox (badness 1953) in paragraph at lines 182--183
+Underfull \hbox (badness 1953) in paragraph at lines 188--189
 \OT1/ptm/m/n/11 la stam-pa), ma so-pra-tut-to per di-re al-la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
 
-Underfull \hbox (badness 2435) in paragraph at lines 184--186
+Underfull \hbox (badness 2435) in paragraph at lines 190--192
 \OT1/ptm/m/n/11 al-le in-for-ma-zio-ni den-tro que-sti ar-ray, []e
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--186
+Underfull \hbox (badness 10000) in paragraph at lines 190--192
 
  []
 
 
-Underfull \hbox (badness 6725) in paragraph at lines 190--192
+Underfull \hbox (badness 6725) in paragraph at lines 196--198
 \OT1/ptm/m/n/11 le strut-tu-re di con-trol-lo, im-po-sta-re le
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
-\OT1/ptm/m/n/11 va-ria-bi-li \OT1/pcr/m/n/11 numeropercosi \OT1/ptm/m/n/11 a '0
-' e
+Underfull \hbox (badness 6380) in paragraph at lines 196--198
+\OT1/ptm/m/n/11 va-ria-bi-li \OT1/pcr/m/n/11 numerosoluzioni \OT1/ptm/m/n/11 a 
+'0' e
  []
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 190--192
+Underfull \hbox (badness 2326) in paragraph at lines 196--198
 \OT1/pcr/m/n/11 cursorecoppia \OT1/ptm/m/n/11 a '-1', in par-ti-co-la-re
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 190--192
+Underfull \hbox (badness 1389) in paragraph at lines 196--198
 \OT1/ptm/m/n/11 que-st'ul-ti-ma fun-ge da in-di-ce per l'ar-ray
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
+Underfull \hbox (badness 10000) in paragraph at lines 196--198
 \OT1/ptm/m/n/11 del-le cop-pie \OT1/pcr/b/n/11 pcoppie \OT1/ptm/m/n/11 ogni vol
 -ta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
+Underfull \hbox (badness 10000) in paragraph at lines 196--198
 \OT1/ptm/m/n/11 bi-so-gna cam-bia-re cop-pia al-l'in-ter-no
  []
 
 
-Overfull \hbox (11.42778pt too wide) in paragraph at lines 190--192
+Overfull \hbox (11.42778pt too wide) in paragraph at lines 196--198
 \OT1/pcr/m/n/11 flow_inizializzaprossimacoppia() 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
+Underfull \hbox (badness 10000) in paragraph at lines 196--198
 
  []
 
 
-Overfull \hbox (11.42778pt too wide) in paragraph at lines 192--193
+Overfull \hbox (11.42778pt too wide) in paragraph at lines 198--199
 []\OT1/pcr/b/n/11 flow_inizializzaprossimacoppia()
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 192--193
-\OT1/ptm/m/n/11 Al-l'i-ni-zio, e ogni vol-ta che una cop-pia
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+\OT1/ptm/m/n/11 Quan-do vie-ne chia-ma-ta da
  []
 
 
-Underfull \hbox (badness 1552) in paragraph at lines 192--193
-\OT1/ptm/m/n/11 tro-va un per-cor-so, vie-ne lan-cia-ta que-sta
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+\OT1/pcr/m/n/11 flow_risolutore() \OT1/ptm/m/n/11 ed ogni vol-ta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
-\OT1/ptm/m/n/11 (quan-do cur-so-re-cop-pia ha un va-lo-re
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+\OT1/ptm/m/n/11 lan-cia-ta que-sta fun-zio-ne che ag-gior-na
  []
 
 [3 <./svg-inkscape/pgrid1_svg-tex.pdf> <./svg-inkscape/Downarrow_svg-tex.pdf
@@ -1448,168 +1456,171 @@ pdfTeX warning: /usr/bin/pdflatex (file ./svg-inkscape/pgrid2_svg-tex.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
 >]
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <12> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 194.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 197.
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 200.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 204.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 197.
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <11> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 204.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <11> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 213.
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--211
+Underfull \hbox (badness 10000) in paragraph at lines 200--220
 \OT1/ptm/m/n/11 bi-so-gna ag-gior-na-re le strut-tu-re di
  []
 
 
-Underfull \hbox (badness 5862) in paragraph at lines 194--211
-\OT1/ptm/m/n/11 con-trol-lo co-me det-to in pre-ce-den-za e
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--211
+Underfull \hbox (badness 10000) in paragraph at lines 200--220
 
  []
 
 
-Overfull \hbox (12.88394pt too wide) in paragraph at lines 212--219
+Overfull \hbox (12.88394pt too wide) in paragraph at lines 221--228
 \OT1/ptm/m/n/10 flow[]trovapercorsi(*(pcoppie+cursorecoppia)$\OMS/cmsy/m/n/10 ^
 ^@$\OT1/ptm/m/n/10 riga); 
  []
 
 
-Overfull \hbox (10.74603pt too wide) in paragraph at lines 212--219
+Overfull \hbox (10.74603pt too wide) in paragraph at lines 221--228
 \OT1/ptm/m/n/10 flow[]trovapercorsi(*(pcoppie+cursorecoppia)+riga); 
  []
 
 
-Overfull \hbox (4.82779pt too wide) in paragraph at lines 224--234
+Underfull \hbox (badness 3219) in paragraph at lines 221--228
+\OT1/ptm/m/n/11 da-ti i per-cor-si del-le cop-pie pre-ce-den-ti,
+ []
+
+
+Overfull \hbox (4.82779pt too wide) in paragraph at lines 234--244
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--234
-\OT1/ptm/m/n/11 del-la cel-la non quan-do chia-ma, ma
+Underfull \hbox (badness 5817) in paragraph at lines 234--244
+\OT1/ptm/m/n/11 ve-ri-fi-ca-to so-lo do-po aver chia-ma-to la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--234
-\OT1/ptm/m/n/11 una vol-ta chia-ma-ta, quin-di al-l'i-ni-zio
+Underfull \hbox (badness 3907) in paragraph at lines 234--244
+\OT1/ptm/m/n/11 fun-zio-ne ri-cor-si-va in ta-le cel-la, quin-di
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--234
-\OT1/ptm/m/n/11 del-la fun-zio-ne bi-so-gna con-trol-la-re se
- []
-
-
-Underfull \hbox (badness 3439) in paragraph at lines 224--234
-\OT1/ptm/m/n/11 la cel-la in-te-res-sa-ta []e una cel-la li-be-ra,
- []
-
-
-Underfull \hbox (badness 2165) in paragraph at lines 224--234
+Underfull \hbox (badness 2165) in paragraph at lines 234--244
 \OT1/ptm/m/n/11 oc-cu-pa-ta o quel-la che si sta cer-can-do:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--234
+Underfull \hbox (badness 10000) in paragraph at lines 234--244
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
-\OT1/pcr/b/n/11 flow_game_start(int base, int
  []
 
 [4]
-LaTeX Font Info:    Try loading font information for OMS+pcr on input line 263.
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 273.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 263.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 273.
 
-Underfull \hbox (badness 4403) in paragraph at lines 268--286
+Underfull \hbox (badness 10000) in paragraph at lines 270--277
+\OT1/pcr/b/n/11 flow_game_start(int base, int
+ []
+
+
+Underfull \hbox (badness 2744) in paragraph at lines 270--277
+\OT1/ptm/m/n/11 ri-generate le po-si-zio-ni del-le cop-pie fi-no a
+ []
+
+
+Underfull \hbox (badness 6332) in paragraph at lines 270--277
+\OT1/ptm/m/n/11 quan-do non vie-ne tro-va-to un puzz-le con
+ []
+
+
+Underfull \hbox (badness 4403) in paragraph at lines 278--296
 []\OT1/ptm/m/n/11 e sta-to 650 se-con-di), inol-tre l'in-tro-du-zio-ne
  []
 
 
-Overfull \hbox (13.35019pt too wide) in paragraph at lines 268--286
+Underfull \hbox (badness 1609) in paragraph at lines 278--296
+\OT1/ptm/m/n/11 tem-pi di ese-cu-zio-ne. Per ave-re una idea di
+ []
+
+
+Overfull \hbox (13.35019pt too wide) in paragraph at lines 278--296
 |  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--286
+Underfull \hbox (badness 10000) in paragraph at lines 278--296
 \OT1/ptm/m/n/11 Sarebbe pos-si-bi-le mi-glio-ra-re ul-te-rior-men-te
  []
 
 
-Underfull \hbox (badness 4531) in paragraph at lines 268--286
+Underfull \hbox (badness 4531) in paragraph at lines 278--296
 \OT1/ptm/m/n/11 in-tro-dur-re al-go-rit-mi eu-ri-sti-ci che po-treb-be-ro
  []
 
-[5
-
-]
+[5]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 289.
-<../svgs/algsbs/percorsipdf.pdf, id=116, 614.295pt x 794.97pt>
+(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 299.
+<../svgs/algsbs/percorsipdf.pdf, id=117, 614.295pt x 794.97pt>
 File: ../svgs/algsbs/percorsipdf.pdf Graphic file (type pdf)
 <use ../svgs/algsbs/percorsipdf.pdf>
-Package pdftex.def Info: ../svgs/algsbs/percorsipdf.pdf  used on input line 290
+Package pdftex.def Info: ../svgs/algsbs/percorsipdf.pdf  used on input line 300
 .
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: ../svgs/algsbs/percorsipdf.pdf Graphic file (type pdf)
 <use ../svgs/algsbs/percorsipdf.pdf>
-Package pdftex.def Info: ../svgs/algsbs/percorsipdf.pdf  used on input line 290
+Package pdftex.def Info: ../svgs/algsbs/percorsipdf.pdf  used on input line 300
 .
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<../svgs/algsbs/percorsipdf.pdf, id=119, page=1, 614.295pt x 794.97pt>
+<../svgs/algsbs/percorsipdf.pdf, id=120, page=1, 614.295pt x 794.97pt>
 File: ../svgs/algsbs/percorsipdf.pdf Graphic file (type pdf)
 <use ../svgs/algsbs/percorsipdf.pdf, page 1>
 Package pdftex.def Info: ../svgs/algsbs/percorsipdf.pdf , page1 used on input l
-ine 290.
+ine 300.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: ../svgs/algsbs/percorsipdf.pdf Graphic file (type pdf)
 <use ../svgs/algsbs/percorsipdf.pdf, page 1>
 Package pdftex.def Info: ../svgs/algsbs/percorsipdf.pdf , page1 used on input l
-ine 290.
+ine 300.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: ../svgs/algsbs/percorsipdf.pdf Graphic file (type pdf)
 <use ../svgs/algsbs/percorsipdf.pdf, page 1>
 Package pdftex.def Info: ../svgs/algsbs/percorsipdf.pdf , page1 used on input l
-ine 290.
+ine 300.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: ../svgs/algsbs/percorsipdf.pdf Graphic file (type pdf)
 <use ../svgs/algsbs/percorsipdf.pdf, page 1>
 Package pdftex.def Info: ../svgs/algsbs/percorsipdf.pdf , page1 used on input l
-ine 290.
+ine 300.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: ../svgs/algsbs/percorsipdf.pdf Graphic file (type pdf)
 <use ../svgs/algsbs/percorsipdf.pdf, page 1>
 Package pdftex.def Info: ../svgs/algsbs/percorsipdf.pdf , page1 used on input l
-ine 290.
+ine 300.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
  [6
 
  <../svgs/algsbs/percorsipdf.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 294.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 294.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
  (./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 294.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 294.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
 Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: C28BF3AB6AE82D81DA618D4566B339A9;203.
  ) 
 Here is how much of TeX's memory you used:
- 29655 strings out of 493971
- 543582 string characters out of 6160791
- 720160 words of memory out of 5000000
- 32855 multiletter control sequences out of 15000+600000
+ 29686 strings out of 493971
+ 544044 string characters out of 6160791
+ 722010 words of memory out of 5000000
+ 32882 multiletter control sequences out of 15000+600000
  581181 words of font info for 129 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
  55i,19n,63p,792b,606s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1617,15 +1628,16 @@ Here is how much of TeX's memory you used:
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/cou
 rier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (6 pages, 181432 bytes).
+Output written on document.pdf (6 pages, 185069 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
+ 177 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
  31 named destinations out of 1000 (max. 500000)
  205 words of extra memory for PDF output out of 10000 (max. 10000000)
 

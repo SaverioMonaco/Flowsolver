@@ -15,19 +15,19 @@ int main()
  {
 /* ---------------------------------------------------------------------------*/
    /* ESEMPIO RISOLUTORE CLASSICO */
-   /*printf("Esempio risolutore classico\n");
-   flow_inizializzagriglia(5,5);
+   printf("Esempio risolutore classico\n");
+   flow_inizializzagriglia(4,4);
    flow_generacoppie_scanf(2);
-   flow_risolutore();*/
+   flow_risolutore();
    /* Per trovare tutti i percorsi invece bisogna usare la Funzione
-      flow_risolutorePRIMO(); */
+      flow_risolutoreprimopercorso(); */
 
 /* ---------------------------------------------------------------------------*/
 
    /* ESEMPIO RISOLUTORE LIVELLI APP */
 
-   printf("Esempio risolutore livelli app\n");
-   flow_app_risolutorelivello(0,300); // Pacchetto 6 - Livello 100
+   /*printf("Esempio risolutore livelli app\n");
+   flow_app_risolutorelivello(0,300);*/ // Pacchetto 6 - Livello 100
 
 
 /* ---------------------------------------------------------------------------*/
