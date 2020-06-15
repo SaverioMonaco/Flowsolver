@@ -118,4 +118,43 @@ Consider the following case:
 <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/trim1.png"
   width="128" height="128">
 
-Although the movement is possible, it is clear that will not lead to a solution because the other two pairs will not have enough space to connect (<em>there must be at least 2 spaces to connect those 2 pairs</em>)
+Although the movement is possible, it is clear that will not lead to a solution because the other two pairs will not have enough space to connect (<em>there must be at least 2 spaces in that column to connect those 2 pairs</em>)
+
+The solution is simple, yet effective:
+
+For each column and row the computer initializes an integer that is the number of empty cells in that column/row minus the number of pairs that that column/row separated. Those structures will be upgraded every time a move is about to be made or every time the program changes pair to work on, and if one of those number is less than 0, the move will not lead to a global solution.
+
+For the example before, without this method the program will reach a solution in 3311 moves, if this method is used, in only 1037 moves.
+
+This was tested on various puzzles and overall the duration of calculation is significantly lower.
+This was also tested on levels of the official app:
+<tr>
+  <th>Size</th>
+  <th>Pairs</th>
+  <th>Duration of calculation (Trimming off)</th>
+  <th>Duration of calculation (Trimming on)</th>
+</tr>
+<tr>
+ <td>9x9</td>
+ <td>10</td>
+ <td>8.27</td>
+ <td>1.06</td>
+</tr>
+<tr>
+ <td>9x9</td>
+ <td>9</td>
+ <td>35.91</td>
+ <td>1.20</td>
+</tr>
+<tr>
+ <td>9x9</td>
+ <td>8</td>
+ <td>465.73</td>
+ <td>7.42</td>
+</tr>
+<tr>
+ <td>9x9</td>
+ <td>7</td>
+ <td>5198.30</td>
+ <td>650.81</td>
+</tr>
