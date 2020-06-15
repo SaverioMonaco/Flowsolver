@@ -21,3 +21,5 @@ Unlike the popular game, where there exists only one solution for each puzzle, t
 
 <h2> How the program works </h2>
 To find all solutions, the algorithm must be less holistic than other solutions given online, a rule to enumerate all possible paths must be found.
+
+First of all, all pairs (distinguished by colors) must be numerically ordered

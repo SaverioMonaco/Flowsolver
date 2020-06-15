@@ -502,7 +502,7 @@ void flow_inizializzaprossimacoppiasenzastampa()
 
 int flow_inizializzaprossimacoppiaprimopercorso()
  {
-
+   flow_grafica_stampagrigliacolori();printf("\n");
    cursorecoppia+=2;
 
    /* Se abbiamo finito i tubi allora in questo punto il cursore delle pcoppie
