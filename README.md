@@ -9,4 +9,4 @@ Flow Free is a popular puzzle game developed for Android and iOS.
 The goal of this game is to connect all pair of dots (distinguished by colors) creating pipes in the given grid,
 for example:
 
-<img src="readmeimgs/example1.jpg">
+<img src="https://gitlab.com/saveriomonaco97/flowsolver/-/blob/master/readmeimgs/example1.jpg">
