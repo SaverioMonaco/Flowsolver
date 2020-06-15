@@ -24,7 +24,7 @@ To find all solutions, the algorithm must be less holistic than other solutions 
 
 First of all, all pairs (distinguished by colors) must be numerically ordered. Then the program will find all paths for the first pair, at the very moment it finds the first path, the program will try to find all path for the second pair with the presence of the first path as an obstacle and so on. If no paths are found, the program will search for the next paths for the previous pair.
 
-In the example before the puzzle is solved by the program in this manner:
+In the example before the puzzle is solved by the program in this order:
 
 <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step0.png"
   width="128" height="128">
@@ -57,4 +57,50 @@ But the blue pair won't find a solution, so the program will find other solution
 
 The biggest problem to address now is how can one find all possible paths that connects a pair in a grid with the presence of obstacles (paths of other pairs)
 
-<h2> Fining all paths for one pair </h2>
+<h2> Finding all paths for one pair </h2>
+Deciding from which dot of the pair to start, the maximum possible movement from there are 4: up, down, left, right (that can not be valid if on the place is occupied by a path, a dot of a pair, or if the movement leads the path out of the grid), from there, the possible movement are 3 because going back is not possible.
+
+One can imagine to deal with a Tree, so the best approach is the technique is probably Backtracking.
+
+Setting an arbitrary hierarchy of direction (like, up>left>down>right), the backtracking would be:
+<ul>
+  <li>If avaible, always go up</li>
+  <li>If up is not avaible, go left</li>
+  <li>If neither up or left are avaible, go down</li>
+  <li>If up, left and down are not possible, go right</li>
+  <li>If no movement is possible, go back and try the next direction</li>
+</ul>
+
+This way of visualising all possible way to find a path connecting two dots in a grid shows how easy it is to deal with an incredible high number of possibilities. For example, the program calculated the number of paths connecting two dots placed on the end of one diagonal in a squared grid for different size of the grid:
+
+<table style="width:100%">
+  <tr>
+    <th>Side</th>
+    <th>Number of paths</th>
+  </tr>
+  <tr>
+   <td>2</td>
+   <td>2</td>
+  </tr>
+  <tr>
+   <td>3</td>
+   <td>12</td>
+  </tr>
+  <tr>
+   <td>4</td>
+   <td>184</td>
+  </tr>
+  <tr>
+   <td>5</td>
+   <td>8512</td>
+  </tr>
+  <tr>
+   <td>6</td>
+   <td>1262816</td>
+  </tr>
+  <tr>
+   <td>7</td>
+   <td>575780564</td>
+  </tr>
+  <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/npaths.png"
+    width="128" height="128">
