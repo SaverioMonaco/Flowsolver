@@ -40,3 +40,10 @@ In the example before the puzzle is solved by the program in this manner:
 
 <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step4.png"
   width="128" height="128">
+
+Of course the program didn't find the solution on the first try, for example a valid path for the yellow pair could have been:
+
+<img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/stepfailed.png"
+  width="128" height="128">
+
+But the blue pair won't find a solution, so the program will find other solutions for the yellow one.
