@@ -110,6 +110,7 @@ Given the amount of paths the program has to deal with, it is essential to find 
 
 <h2> Trimming the tree </h2>
 Consider the following case:
+
 <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/trim0.png"
   width="128" height="128">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Right_arrow.svg/434px-Right_arrow.svg.png"
