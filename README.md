@@ -23,3 +23,20 @@ Unlike the popular game, where there exists only one solution for each puzzle, t
 To find all solutions, the algorithm must be less holistic than other solutions given online, a rule to enumerate all possible paths must be found.
 
 First of all, all pairs (distinguished by colors) must be numerically ordered. Then the program will find all paths for the first pair, at the very moment it finds the first path, the program will try to find all path for the second pair with the presence of the first path as an obstacle and so on. If no paths are found, the program will search for the next paths for the previous pair.
+
+In the example before the puzzle is solved by the program in this manner:
+
+<img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step0.png"
+  width="64" height="64">
+
+<img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step1.png"
+  width="64" height="64">
+
+<img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step2.png"
+  width="64" height="64">
+
+<img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step3.png"
+  width="64" height="64">
+  
+<img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step4.png"
+  width="64" height="64">
