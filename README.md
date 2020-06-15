@@ -104,3 +104,17 @@ This way of visualising all possible way to find a path connecting two dots in a
   </tr>
   <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/npaths.png"
     width="128" height="128">
+
+
+Given the amount of paths the program has to deal with, it is essential to find ways to trim some Tree branches.
+
+<h2> Trimming the tree </h2>
+Consider the following case:
+<img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/trim0.png"
+  width="128" height="128">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Right_arrow.svg/434px-Right_arrow.svg.png"
+    width="32" height="32">
+<img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/trim1.png"
+  width="128" height="128">
+
+Although the movement is possible, it is clear that will not lead to a solution because the other two pairs will not have enough space to connect (<em>there must be at least 2 spaces to connect those 2 pairs</em>)

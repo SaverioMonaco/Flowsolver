@@ -75,7 +75,6 @@ void flow_grafica_stampagriglia()
 void flow_grafica_stampagrigliacolori()
  {
    //clear();
-
    if(*(pcoppie)>7)
      {
        flow_grafica_stampagriglia();

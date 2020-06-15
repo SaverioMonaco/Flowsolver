@@ -16,8 +16,9 @@ int main()
 /* ---------------------------------------------------------------------------*/
    /* ESEMPIO RISOLUTORE CLASSICO */
    //printf("Esempio risolutore classico\n");
-   flow_inizializzagriglia(6,6);
-   flow_generacoppie_scanf(1);
+   flow_inizializzagriglia(5,4);
+   flow_generacoppie_scanf(3);
+
    flow_grafica_stampagrigliacolori();
    //flow_risolutore();
    /* Per trovare tutti i percorsi invece bisogna usare la Funzione
