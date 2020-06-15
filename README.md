@@ -36,6 +36,8 @@ In the example before the puzzle is solved by the program in this manner:
     width="32" height="32">
 <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step2.png"
   width="128" height="128">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Right_arrow.svg/434px-Right_arrow.svg.png"
+    width="32" height="32">
 
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Right_arrow.svg/434px-Right_arrow.svg.png"
     width="32" height="32">
@@ -52,3 +54,7 @@ Of course the program didn't find the solution on the first try, for example a v
   width="128" height="128">
 
 But the blue pair won't find a solution, so the program will find other solutions for the yellow one.
+
+The biggest problem to address now is how can one find all possible paths that connects a pair in a grid with the presence of obstacles (paths of other pairs)
+
+<h2> Fining all paths for one pair </h2>
