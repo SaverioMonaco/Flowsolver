@@ -15,3 +15,9 @@ for example:
   width="64" height="64">
 <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/example1solved.jpg"
   width="256" height="256">
+
+<h2> Goal of the program </h2>
+Unlike the popular game, where there exists only one solution for each puzzle, this program can find all existing solutions and display them.
+
+<h2> How the program works </h2>
+To find all solutions, the algorithm must be less holistic than other solutions given online, a rule to enumerate all possible paths must be found.
