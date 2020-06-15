@@ -130,6 +130,8 @@ For the example before, without this method the program will reach a solution in
 
 This was tested on various puzzles and overall the duration of calculation is significantly lower.
 This was also tested on levels of the official app:
+
+<table style="width:100%">
 <tr>
   <th>Size</th>
   <th>Pairs</th>
