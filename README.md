@@ -102,6 +102,8 @@ This way of visualising all possible way to find a path connecting two dots in a
    <td>7</td>
    <td>575780564</td>
   </tr>
+</table>
+
   <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/npaths.png"
     width="128" height="128">
 
@@ -158,3 +160,4 @@ This was also tested on levels of the official app:
  <td>5198.30</td>
  <td>650.81</td>
 </tr>
+</table>
