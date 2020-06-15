@@ -28,16 +28,21 @@ In the example before the puzzle is solved by the program in this manner:
 
 <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step0.png"
   width="128" height="128">
-
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Right_arrow.svg/434px-Right_arrow.svg.png"
+    width="32" height="32">
 <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step1.png"
   width="128" height="128">
-
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Right_arrow.svg/434px-Right_arrow.svg.png"
+    width="32" height="32">
 <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step2.png"
   width="128" height="128">
 
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Right_arrow.svg/434px-Right_arrow.svg.png"
+    width="32" height="32">
 <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step3.png"
   width="128" height="128">
-
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Right_arrow.svg/434px-Right_arrow.svg.png"
+    width="32" height="32">
 <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step4.png"
   width="128" height="128">
 
