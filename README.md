@@ -27,16 +27,16 @@ First of all, all pairs (distinguished by colors) must be numerically ordered. T
 In the example before the puzzle is solved by the program in this manner:
 
 <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step0.png"
-  width="64" height="64">
+  width="128" height="128">
 
 <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step1.png"
-  width="64" height="64">
+  width="128" height="128">
 
 <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step2.png"
-  width="64" height="64">
+  width="128" height="128">
 
 <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step3.png"
-  width="64" height="64">
-  
+  width="128" height="128">
+
 <img src="https://gitlab.com/saveriomonaco97/flowsolver/-/raw/master/readmeimgs/step4.png"
-  width="64" height="64">
+  width="128" height="128">
